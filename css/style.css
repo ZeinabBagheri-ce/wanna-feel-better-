@@ -1,0 +1,359 @@
+body {
+    margin: auto;
+    font-family: "apercu",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #202121;
+    background: #ededed;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: #49aac5;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+footer{
+    height: 200px;
+    background-color: bisque;
+    
+} 
+
+header, nav, section {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#header{
+    position: sticky;
+    height: 70px;
+    top: 0;
+    line-height: 73px;
+    font-size: 14px;
+    background-color: #f5f7f6;
+    width: 100%;
+    z-index: 9;
+    font-weight: 400;
+    transition: background .3s;
+}
+
+#header .progress{
+    width: 100%;
+    height: 10px;
+    background-color: #d1d1d1;
+}
+
+#header .progress .progress-bar{
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, rgb(184,2,216),  rgb(255,0,43));
+}
+#header .header-main {
+    display: flex;
+    height: 70px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+
+.menu{
+    height: 540px;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: left .4s ease-in-out;
+    -webkit-transition: left .4s ease-in-out;
+    -moz-transition: left .4s ease-in-out;
+    -ms-transition: left .4s ease-in-out;
+    -o-transition: left .4s ease-in-out;
+    visibility: hidden;
+}
+
+.menu.active{
+    left: 0;
+}
+.menu .menu-list{
+    visibility: visible;
+}
+
+.menu img{
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.menu ul li{
+    text-align: center;
+    border-bottom: 1px solid #616161;
+    border-top: 1px solid #616161;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+}
+
+.menu ul li:hover{
+    background: #f8f8f8;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+
+.menu .menu-list{
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+
+/* header .............................*/
+
+.box-site-head .imag{
+    width: 100%;
+    height: 570px;
+    background-image: url(../image/_Unleashing-Your-Best-Version-cover.jpg);
+    background-size: cover;
+}
+
+.box-site-head img{
+    width: 100%;
+    height: auto;
+}
+
+.box-site-head .inner{
+    height: 100%;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    clear: both;
+}
+
+.box-info {
+    width: 100%;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.row {
+    margin-bottom: 15px;
+    color: #fcfcfc;
+    margin-right: 400px;
+}
+
+.box-site-head .inner .row .heading-large {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 0;
+    line-height: normal;
+    color: #fcfcfc;
+}
+
+.by {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* ...... */
+
+.corses {
+    border-bottom: 1px solid #e6eaea;
+    position: relative;
+    padding: 50px 0;
+    height: 250px;
+    transition: background .3s ease-in-out;
+    padding-top: 23px;
+    padding-bottom: 23px;
+} 
+
+.inner-corses{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 1010px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.box-page-info{
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.corses h3{
+    font-size: 19px;
+    font-family: "apercu",sans-serif;
+    display: block;
+    margin-bottom: 25px;
+    font-weight: normal;
+    line-height: 170%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.corses-list{
+    margin-top: 25px;
+
+}
+
+.corses-list li{
+    float: none;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    position: relative;
+    font-size: 14px;
+    list-style: none;
+      
+}
+
+.corses-list li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 34px;
+    padding: 0 20px;
+    line-height: 34px;
+    color: #202121;
+    border: 1px solid #202121;
+    border-radius: 36px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+
+}
+
+.corses-list li a:hover{
+    color: #49c5b6;
+    border: 1.5px solid #49c5b6;
+}
+
+/* .................................... */
+
+.vote-screen-list{
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.vote-screen-list li{
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+.vote-screen-list li:after {
+    content: ".";
+    padding: 0 12px;
+    font-weight: normal;
+}
+
+.vote-screen-list li .active {
+    font-weight: bold;
+}
+
+
+.vote-screen-list li a {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 4px solid transparent;
+    color: #202121;
+}
+
+/* screen */
+
+.inner-screen{
+    margin: 15px 160px;
+    width: 600px;
+    display: block;
+}
+
+.inner-screen .screen-2{
+    margin-top: 20px;
+}
+
+.vide{
+    margin: 5px 200px;
+}
+.vide video{
+    width: 450px;
+    margin: 20px 45px;
+    height: auto;
+    display: inline-block;
+}
+
+/* ............ */
+
+footer span .awards p{
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: arial;
+}
+
+    
+
